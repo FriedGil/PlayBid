@@ -10,7 +10,6 @@
   
   <Login />
 
-
   {#if $currentUser}
 
     {#if $currentUser.active}
@@ -24,8 +23,13 @@
     </h3>
 
   {/if}
-  
     <Boards/>
-    
-    
   {/if}
+
+  <br/>
+  
+<a href="/offline">
+  <button>
+    Play Offline (Recommended)
+  </button>
+</a>
